@@ -19,7 +19,7 @@ func main() {
 	}
 
 	for i := 0; i < workerCount; i++ {
-		res := <-responseChannel
+		res := <-responseChannel // assign response channel to res parameter
 		println(res)
 	}
 
@@ -46,7 +46,7 @@ func main() {
 func worker1(workerID string, responseChannel chan string) {
 	// Simulate request latency
 	time.Sleep(1 * time.Second)
-	responseChannel <- (workerID + " Response")
+	responseChannel <- (workerID + " Response") //return data to channel
 }
 
 func worker3(workerID string, exitChannel chan bool) {
