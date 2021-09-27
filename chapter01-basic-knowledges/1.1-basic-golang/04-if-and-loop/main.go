@@ -27,14 +27,14 @@ func main() {
 		println("You are Female")
 	case Male:
 		println("You are Male")
-	default:
+	default: // Default case if not in other case
 		println("Gender is not specify")
 	}
 	printUnderline()
 
 	// 3. For i
 	for i := 0; i < 10; i++ {
-		println(fmt.Sprintf("Loop i=%d", i))
+		println(fmt.Sprintf("Loop i=%d", i)) //
 	}
 	printUnderline()
 
@@ -50,12 +50,12 @@ func main() {
 		println(fmt.Sprintf("Country %d=%s", i, country))
 	}
 	// Note: for range without index use underscore at first variable
-	// for _, country := range countries {
-	// 	println(fmt.Sprintf("Country %s", country))
-	// }
+	for _, country := range countries {
+		println(fmt.Sprintf("Country %s", country))
+	}
 	printUnderline()
 
-	// 5. For condition
+	// 5. For condition (while loop)
 	i := 0
 	for i < 10 {
 		i++
