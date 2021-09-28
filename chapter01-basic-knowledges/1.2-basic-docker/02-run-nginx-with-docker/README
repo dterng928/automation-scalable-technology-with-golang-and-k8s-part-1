@@ -5,7 +5,7 @@ Run Nginx with Docker
 1. Open vscode at chapter01-basic-knowledges/1.2-basic-docker/02-run-nginx-with-docker
 
 2. Run command
-$ docker-compose up -d
+$ docker-compose up -d // find docker-compose.yml to run , -d is for run in background (deamon)
 Creating network "1202-run-nginx-with-docker_default" with the default driver
 Pulling nginx (3dsinteractive/nginx:1.12)...
 1.12: Pulling from 3dsinteractive/nginx
